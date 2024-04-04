@@ -1,0 +1,28 @@
+@import "./abstracts/variables";
+@import "./mixins/breakpoints";
+@import "./abstracts/button";
+@import "./abstracts/common";
+@import "./includes/header";
+@import "./includes/footer";
+ 
+.main{
+    background: rgba(228, 228, 228, 0.2);
+    .main-container{
+        height: 100vh;
+        .main-content {
+            background: orange;
+            width: 400px;
+            border-radius: 10px;
+            .main-input-wrap .main-input{
+                height: 120px;
+                font-size: 60px;
+                // background: gray;
+                border-radius: 10px 10px 0 0;
+                @include media-min-md{
+                    height: 150px;
+                    font-size: 75px;
+                }
+            }
+        }
+    }
+}

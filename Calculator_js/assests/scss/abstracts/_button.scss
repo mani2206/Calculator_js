@@ -1,0 +1,36 @@
+// Start button style
+body{
+    .main-btn-wrap{
+        .main-btn{
+            padding: 10px;
+            // background: $grey;
+            box-shadow: 0px -2px 7px #fff, 5px 5px 12px rgba(0,0,0,.15);
+            width: 60px;
+            height: 60px;
+            margin: 8px 0;
+            border-radius: 20px;
+            font-size: 30px;
+            @include font-style($font-mb);
+            @include media-min-md{
+                width: 70px;
+                height: 70px;
+                border-radius: 35px;
+            }
+        }
+        .red{
+            color: $red;
+            &:hover{
+                color: $black !important;
+            }
+        }
+    }
+}
+// @each $btn in $buttons {
+//     .btn-#{nth($btn, 1)} {
+//         &:hover, &:active {
+//             background-color: nth($btn, 2) !important;
+//             color: $white;
+//         }
+//     }
+// }
+// End button style
